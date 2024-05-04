@@ -1,0 +1,55 @@
+== Generador de README.ADOC
+'''
+[comment]
+Author <leandroav.dev@gmail.com>, {docdate}.
+
+
+> Editor online para la creación ágil de su readme utilizando AsciiDoc.
+
+// Insignias
+&#13;
+
+[link=https://asciidoc.org]
+image::https://i.postimg.cc/wxw7GzYn/asciidoc-badge.png[Web,window=_blank]
+
+[link=https://github.com/L3anAv/.asciidoc-generator]
+image::https://img.shields.io/badge/website-000000?style=for-the-badge&logo=About.me&logoColor=white[Web,window=_blank]
+
+=== Utilización
+---
+- Elige de la lista de secciones las que necesites, y agregalas a tu ***README***.
+- Puedes editar cada sección según tus necesidades __(cada sección tiene un contenido default).__
+- Al terminar puedes copiar el contenido desde la pestaña ``***Código en asciidoc***`` alado de ``***Previsualización***``. 
+- Una vez copiado crea un archivo readme.adoc y dentro copia el contenido del portapapeles.
+
+== Información de proyecto
+&#13;
+
+==== Librerias
+&#13;
+
+- https://www.npmjs.com/package/asciidoctor[asciidoctor,role=black]
+- https://www.npmjs.com/package/react-github-btn[react-github-btn,role=black]
+- https://www.npmjs.com/package/react-toastify[react-toastify,role=black]
+- https://www.npmjs.com/package/styled-components[styled-components,role=black]
+- https://www.npmjs.com/package/uuid[uuid,role=black]
+- https://www.npmjs.com/package/wouter[wouter,role=black]
+- https://www.npmjs.com/package/zustand[zustand,role=black]
+
+==== Stack:
+&#13;
+
+image::https://skillicons.dev/icons?i=react,vite,vscode[]
+
+=== Próximas Adiciones
+&#13;
+
+* [ ] Guardado local.
+* [ ] Descarga del archivo desde la web.
+* [ ] Reordenamiento de secciones sin eliminación.
+* [ ] Reinicio de contenido default para cada sección.
+
+~Proyecto~ ~basado~ ~en~ ~http://www.readme.so[readme.so,role=black]~
+
+~2024~
+
