@@ -1,8 +1,4 @@
-<div align="center">
-  
 image::https://i.ibb.co/DYZTdDy/banner.png[Banner]
-
-</div>
 
 == Generador de README.ADOC
 
