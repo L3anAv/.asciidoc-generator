@@ -1,5 +1,13 @@
 image::https://i.ibb.co/DYZTdDy/banner.png[Sunset,role=center,align="center"]
 
+ifdef::env-github[]
+++++
+<p align="center">
+  <img width="460" height="300" src="https://i.ibb.co/DYZTdDy/banner.png">
+</p>
+++++
+endif::[]
+
 == Generador de README.ADOC
 
 [comment]
