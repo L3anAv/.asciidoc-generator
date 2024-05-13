@@ -11,7 +11,7 @@ const ContenedorPrincipal = styled.div`
 
 const ContenedorSecundario = styled.div`
   width:100%;
-  height:92vh;
+  height:92.3vh;
   display:flex;
   margin-top:50px;
   flex-direction:row;
