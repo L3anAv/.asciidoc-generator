@@ -10,7 +10,6 @@ const Contenedor = styled.div`
     width:100%;
     display:flex;
     overflow:hidden;
-    /*background:#d6d6d6;*/
     height:calc(100vh - 32px);
     background:${props => props.themeMode ? '#d6d6d6' : '#181220'};
 
