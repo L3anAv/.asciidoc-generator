@@ -11,7 +11,7 @@ import { BarraLateral, SeccionesSeleccionadas, SeccionesParaSeleccionar, Titulo,
 
 const BarraSeccionesDocumento = () => {
 
-  const { ids, idActual } = useStore()
+  const { ids, idActual, theme } = useStore()
   const actualizarIdActual = useStore((state) => state.actualizarIdActual)
   
   const [titulosBotones, setTitulosBotones] = useState([])
@@ -37,7 +37,7 @@ const BarraSeccionesDocumento = () => {
   }, [ids])
 
   return (
-    <BarraLateral>
+    <BarraLateral modeTheme={theme}>
       <Titulo>Secciones</Titulo>
       <TextoDescripcion>Aquí se listan las secciones agregadas. Haga click para editar el contenido.</TextoDescripcion>
 
@@ -71,7 +71,6 @@ const BarraSeccionesDocumento = () => {
 
       <SeccionesParaSeleccionar>
         <Boton
-          border={false}
           botonwidth={90}
           botonId={`BotonSeccionNueva`}
           contenidoBoton={`+ Nueva Sección`}

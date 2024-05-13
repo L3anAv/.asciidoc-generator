@@ -5,7 +5,7 @@ export const BarraSuperior = styled.div`
     top:0;
     width:100%;
     height:50px;
-    background:#665955;
+    background:${props => props.themeMode ? '#665955' : '#516970'};
 
     div{
         margin-top:-38px;
@@ -35,6 +35,7 @@ export const Titulo = styled.h2`
 
     span:nth-child(1) {
       color: #000;
+
     }
     span:nth-child(2) {
         color: #f9ea77;

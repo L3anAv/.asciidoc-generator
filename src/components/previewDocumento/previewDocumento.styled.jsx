@@ -11,8 +11,8 @@ export const ContenedorMenu = styled.div`
 `
 
 export const BotonPreview = styled.button`
-
-    color:#000;
+    color:#fff;
+    color:${props => props.themeMode ? '#18111d' : '#fff'};
     border:none;
     font-size:12px;
     background:none;
@@ -47,6 +47,7 @@ export const ZonaPreviewAscii = styled.textarea`
     font-size:85%;
     margin-top:10px;
     margin-left:8px;
+    background:#9db2b7;
     background:#fff;
     overflow-y:scroll;
     overflow-x:hidden;
@@ -64,10 +65,12 @@ export const ButtonCopiar = styled.button`
     margin-top:5px;
     padding:8px;
     border-radius:15px;
-    background:#665955;
     font-family:OpenSans;
+
+    background:${props => props.themeMode ? '#665955' : '#4c4c73'};
 
     &:hover{
         cursor:pointer;
+        background:${props => props.themeMode ? '#91817d' : '#39395b'};
     }
 `

@@ -8,8 +8,9 @@ export const Contenedor = styled.div`
     z-index:1;
     font-size:16px;
     font-family:Platypi;
-    background:#665955;
+    /*background:#665955;*/
     justify-content:center;
+    background:${props => props.themeMode ? '#665955' : '#7a939a'};
 
     a{
         all:unset;

@@ -1,5 +1,5 @@
 import Home  from "./pages/home/home"
-import {Route, Switch } from "wouter";
+import {Switch,Router, Route} from "wouter";
 import Editor from './pages/editor/editor'
 import {RellenarStoreConFijos} from './utils/inciarlizarApp'
 
@@ -9,13 +9,14 @@ function App() {
   console.disableYellowBox = true;
 
   return (
-    <Switch>
-      <Route path="/" component={Home} />
-      <Route path="/editor" component={Editor} />
+      <Router base="/.asciidoc-generator">
+          <Switch>
+            <Route path="/" component={Home} />
+            <Route path="/editor" component={Editor} />
 
-      {/* Pagina default */}
-      <Route>404: No such page!</Route>
-    </Switch>
+            <Route>404: Not file</Route>
+          </Switch>
+      </Router>
   )
 }
 

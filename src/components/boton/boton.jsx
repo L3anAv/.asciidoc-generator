@@ -1,9 +1,37 @@
 import PropTypes from 'prop-types';
+import { useState, useEffect } from 'react';
 import { BotonComponente } from "./boton.styled"
+import { useStore } from "../../store/useStoreInfo"
 
 const Boton = ({contenidoBoton, botonId, handleClick,botonwidth, border}) => {
+  
+  const { theme } = useStore()
+  const [colorBorderTheme, setColorBorderTheme] = useState('#18111f')
+  const [colorBorderThemeActive, setColorBorderThemeActive] = useState('#ff9500')
+
+  useEffect(() => {
+   
+    if(theme){
+      setColorBorderTheme('#fff')
+    }else{
+      setColorBorderTheme('#18111f')
+    }
+
+  }, [theme])
+
+  useEffect(() => {
+   
+    if(theme){
+      setColorBorderThemeActive('#ff9500')
+    }else{
+      setColorBorderThemeActive('#fa85cf')
+    }
+
+  }, [theme])
+  
+
   return (
-    <BotonComponente width={botonwidth} id={botonId} onClick={() => handleClick(botonId)} border={border ? '2px solid #ed9553': '2px solid #fff'}>
+    <BotonComponente border={border ? `2px solid ${colorBorderThemeActive}` : `2px solid ${colorBorderTheme}`} themeMode={theme} width={botonwidth} id={botonId} onClick={() => handleClick(botonId)}>
       {contenidoBoton}
     </BotonComponente>
   )

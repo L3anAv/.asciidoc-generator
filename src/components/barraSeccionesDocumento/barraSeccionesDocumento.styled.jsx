@@ -5,11 +5,11 @@ width:22%;
 display:flex;
 margin-top:10px;
 margin-left:8px;
-background:#556266;
-margin-bottom:10px;
-flex-direction:column;
 overflow-x:hidden;
 overflow-y:scroll;
+margin-bottom:20px;
+flex-direction:column;
+background:${props => props.modeTheme ? '#d6d6d6' : '#43627a'};
 `
 
 export const SeccionesSeleccionadas = styled.div`
@@ -24,15 +24,16 @@ margin-bottom:0;
 `
 
 export const Titulo = styled.h3`
-color:#000;
-font-size:13px;
+color:#18111d;
+/*color:#000;*/
+font-size:15px;
 margin-top:10px;
 margin-left:12px;
 font-family:OpenSans;
 `
 
 export const TextoDescripcion = styled.h4`
-color:#fff;
+color:#18111d;
 font-size:12px;
 margin-top:5px;
 margin-left:18px;

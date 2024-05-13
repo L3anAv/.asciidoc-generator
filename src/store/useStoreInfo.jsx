@@ -2,9 +2,13 @@ import { create } from 'zustand'
 
 export const useStore = create((set) => ({ 
    idActual: '',
+   theme:true,
+   themeName: 'Modo Oscuro',
    ids: new Set(),
    contenidosTextarea: new Map(),
+   actualizartheme: (themeStatus) => set(() => ({theme: themeStatus})),
    actualizarIdActual: (idActualNuevo) => set(() => ({idActual: idActualNuevo})),
+   actualizarthemeName: (themeNameNuevo) => set(() => ({themeName: themeNameNuevo})),
 }))
 
 export function agregarId(nuevoId) {

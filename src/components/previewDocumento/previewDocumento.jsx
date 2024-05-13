@@ -2,14 +2,16 @@ import './styles-asciidoc.css'
 import Asciidoctor from 'asciidoctor'
 import { useEffect,useState } from 'react'
 import 'react-toastify/dist/ReactToastify.css';
-import { toast, ToastContainer } from 'react-toastify';
 import { useStore }  from '../../store/useStoreInfo'
+import { toast, ToastContainer } from 'react-toastify';
 import { ZonaPreview, Contenedor, ContenedorMenu,ZonaPreviewAscii, ButtonCopiar, BotonPreview } from "./previewDocumento.styled"
 
 const PreviewDocumento = () => {
 
   const asciidoctor = Asciidoctor()
-  const {contenidosTextarea} = useStore()
+  const {contenidosTextarea, theme, themeName} = useStore()
+  const actualizarThemeActual = useStore((state) => state.actualizartheme)
+  const actualizarThemeName = useStore((state) => state.actualizarthemeName)
 
   const notify = () => {
 
@@ -24,14 +26,27 @@ const PreviewDocumento = () => {
       theme: "dark",
       });
   }
-
+  
   const [textoParaPreview, setTextoParaPreview] = useState('')
   const [mostrarPreview, setMostrarPreview] = useState(true)
-  
+
   function handleClickBotonCopiar(){
     notify()
     navigator.clipboard.writeText(textoParaPreview)
   }
+
+  function hadleBotonThemeMode(){
+    
+    if(theme){
+      actualizarThemeActual(false)
+      actualizarThemeName('Modo Claro')
+      }else{
+        actualizarThemeActual(true)
+        actualizarThemeName('Modo Oscuro')
+    }
+
+  }
+
 
   useEffect(() => {
 
@@ -47,10 +62,10 @@ const PreviewDocumento = () => {
   
   return (
     <Contenedor>
-    <ContenedorMenu><BotonPreview underlineActivo={mostrarPreview ? 'underline' : 'none'} onClick={() => setMostrarPreview(true)}>Previsualización</BotonPreview><BotonPreview underlineActivo={!mostrarPreview ? 'underline' : 'none'} onClick={() => setMostrarPreview(false)}>Código en asciidoc</BotonPreview></ContenedorMenu>
+    <ContenedorMenu><BotonPreview themeMode={theme} underlineActivo={mostrarPreview ? 'underline' : 'none'} onClick={() => setMostrarPreview(true)}>Previsualización</BotonPreview><BotonPreview themeMode={theme} underlineActivo={!mostrarPreview ? 'underline' : 'none'} onClick={() => setMostrarPreview(false)}>Código en asciidoc</BotonPreview></ContenedorMenu>
     {mostrarPreview ?
-      <ZonaPreview dangerouslySetInnerHTML={{__html: asciidoctor.convert(textoParaPreview)}}/>
-      : <><ButtonCopiar onClick={() => handleClickBotonCopiar()}>Copiar Contenido</ButtonCopiar><ZonaPreviewAscii disabled>{textoParaPreview}</ZonaPreviewAscii></>
+      <><ButtonCopiar themeMode={theme} onClick={() => hadleBotonThemeMode()}>{themeName}</ButtonCopiar><ZonaPreview dangerouslySetInnerHTML={{__html: asciidoctor.convert(textoParaPreview)}}/></>
+      : <><ButtonCopiar themeMode={theme} onClick={() => handleClickBotonCopiar()}>Copiar Contenido</ButtonCopiar><ZonaPreviewAscii disabled>{textoParaPreview}</ZonaPreviewAscii></>
     }
     <ToastContainer />
     </Contenedor>

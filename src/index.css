@@ -1,26 +1,26 @@
 @font-face {
     font-family:OpenSans;
-    src: url("src/fonts/OpenSans.ttf"), format("truetype");
+    src:url('./fonts/OpenSans.ttf') format('truetype');
 }
 
 @font-face {
     font-family:Righteous-Regular;
-    src: url("src/fonts/Righteous-Regular.ttf"), format("truetype");
+    src:url('./fonts/Righteous-Regular.ttf') format('truetype');
 }
 
 @font-face {
     font-family:Jersey15;
-    src: url("src/fonts/Jersey15-Regular.ttf"), format("truetype");
+    src:url('./fonts/Jersey15-Regular.ttf') format('truetype');
 }
 
 @font-face {
     font-family:Rozha;
-    src: url("src/fonts/RozhaOne-Regular.ttf"), format("truetype");
+    src:url('./fonts/RozhaOne-Regular.ttf') format('truetype');
 }
 
 @font-face {
     font-family:Platypi;
-    src: url("src/fonts/Platypi-VariableFont_wght.ttf"), format("truetype");
+    src:url("./fonts/Platypi-VariableFont_wght.ttf") format('truetype');
 }
 
 body {

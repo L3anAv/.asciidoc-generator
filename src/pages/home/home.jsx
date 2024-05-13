@@ -1,4 +1,5 @@
 import styled from 'styled-components'
+import { useStore } from '../../store/useStoreInfo'
 import Footer from '../../components/footer/footer'
 import MinEditor from '../../assets/min-editor.png'
 import BarraTitulo from '../../components/barraTitulo/barraTitulo'
@@ -7,9 +8,10 @@ import SeccionPrincipalHome from '../../components/SeccionPrincipalHome/seccionP
 const Contenedor = styled.div`
     width:100%;
     display:flex;
-    background:#ecebf1;
     overflow:hidden;
+    /*background:#d6d6d6;*/
     height:calc(100vh - 32px);
+    background:${props => props.themeMode ? '#d6d6d6' : '#181220'};
 
     img{
         display:block;
@@ -23,9 +25,11 @@ const Contenedor = styled.div`
 
 const Home = () => {
 
+    const { theme } = useStore()
+
     return (
         <>
-        <Contenedor>
+        <Contenedor themeMode={theme}>
         <BarraTitulo />
         <SeccionPrincipalHome />
         <img src={MinEditor}/>

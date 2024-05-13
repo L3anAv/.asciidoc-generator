@@ -6,7 +6,7 @@ import { darInfoPorId, darTitulosPorId } from '../../utils/darInfoPorId'
 const Textarea = () => {
   
   // Store
-  const {idActual, contenidosTextarea} = useStore()
+  const {idActual, contenidosTextarea, theme} = useStore()
 
   // Estados
   const [isEmpty, setIsEmpty] = useState(true);
@@ -46,9 +46,9 @@ const Textarea = () => {
   };
 
   return(
-    <Contenedor>
+    <Contenedor themeMode={theme}>
     {isEmpty ? <p>Seleccione una sección de la barra lateral izquierda para editar el contenido.</p>
-             : <><h2>{tituloTextArea}</h2><AreaDeTexto value={textoDeTextArea} onChange={handleTextAreaChange} /></>
+             : <><h2>{tituloTextArea}</h2><AreaDeTexto themeMode={theme} value={textoDeTextArea} onChange={handleTextAreaChange} /></>
     }
     </Contenedor>
   )
