@@ -1,7 +1,8 @@
 import styled from 'styled-components'
 import { useStore } from '../../store/useStoreInfo'
 import Footer from '../../components/footer/footer'
-import MinEditor from '../../assets/min-editor.png'
+import MinEditorLight from '../../assets/min-editor.webp'
+import MinEditorDark from '../../assets/min-editor-dark.webp'
 import BarraTitulo from '../../components/barraTitulo/barraTitulo'
 import SeccionPrincipalHome from '../../components/SeccionPrincipalHome/seccionPrincipalHome'
 
@@ -32,7 +33,7 @@ const Home = () => {
         <Contenedor themeMode={theme}>
         <BarraTitulo />
         <SeccionPrincipalHome />
-        <img src={MinEditor}/>
+        <img src={theme ? MinEditorLight : MinEditorDark}/>
         </Contenedor>
         <Footer />
         </>
