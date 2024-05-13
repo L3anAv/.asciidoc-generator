@@ -16,7 +16,8 @@ image::https://i.postimg.cc/wxw7GzYn/asciidoc-badge.png[Web,window=_blank]
 image::https://img.shields.io/badge/website-000000?style=for-the-badge&logo=About.me&logoColor=white[Web,window=_blank]
 
 === Utilización
----
+&#13;
+
 - Elige de la lista de secciones las que necesites, y agregalas a tu ***README***.
 - Puedes editar cada sección según tus necesidades __(cada sección tiene un contenido default).__
 - Al terminar puedes copiar el contenido desde la pestaña ``***Código en asciidoc***`` alado de ``***Previsualización***``. 
@@ -43,6 +44,8 @@ image::https://skillicons.dev/icons?i=react,vite,vscode[]
 
 === Próximas Adiciones
 &#13;
+
+* [x] Tema Claro/Oscuro para la app.
 
 * [ ] Guardado local.
 * [ ] Descarga del archivo desde la web.
