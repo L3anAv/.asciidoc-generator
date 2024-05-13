@@ -38,7 +38,6 @@ image::https://img.shields.io/badge/website-000000?style=for-the-badge&logo=Abou
 &#13;
 
 - https://www.npmjs.com/package/asciidoctor[asciidoctor,role=black]
-- https://www.npmjs.com/package/react-github-btn[react-github-btn,role=black]
 - https://www.npmjs.com/package/react-toastify[react-toastify,role=black]
 - https://www.npmjs.com/package/styled-components[styled-components,role=black]
 - https://www.npmjs.com/package/uuid[uuid,role=black]
@@ -48,7 +47,7 @@ image::https://img.shields.io/badge/website-000000?style=for-the-badge&logo=Abou
 ==== Stack:
 &#13;
 
-image::https://skillicons.dev/icons?i=react,vite,vscode[]
+image::https://skillicons.dev/icons?i=react,vite,styledcomponents[]
 
 === Próximas Adiciones
 &#13;
