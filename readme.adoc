@@ -12,7 +12,7 @@ Author <leandroav.dev@gmail.com>, {docdate}.
 [link=https://asciidoc.org]
 image::https://i.postimg.cc/wxw7GzYn/asciidoc-badge.png[Web,window=_blank]
 
-[https://l3anav.github.io/.asciidoc-generator/]
+[link=https://l3anav.github.io/.asciidoc-generator/]
 image::https://img.shields.io/badge/website-000000?style=for-the-badge&logo=About.me&logoColor=white[Web,window=_blank]
 
 === Utilización
