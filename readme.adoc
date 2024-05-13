@@ -1,5 +1,3 @@
-image::https://i.ibb.co/DYZTdDy/banner.png[Sunset,role=center,align="center"]
-
 ifdef::env-github[]
 ++++
 <p align="center">
