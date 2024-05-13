@@ -1,4 +1,4 @@
-image::https://i.ibb.co/DYZTdDy/banner.png[Banner]
+image::https://i.ibb.co/DYZTdDy/banner.png[Banner,float="right",align="center"]
 
 == Generador de README.ADOC
 
