@@ -41,7 +41,7 @@ Boton.propTypes = {
   contenidoBoton: PropTypes.node.isRequired,
   botonId: PropTypes.oneOfType([PropTypes.number, PropTypes.string]),
   handleClick: PropTypes.func.isRequired,
-  border: PropTypes.bool.isRequired,
+  border: PropTypes.bool.isRequired || PropTypes.string.isRequired,
   botonwidth: PropTypes.number.isRequired,
 }
 

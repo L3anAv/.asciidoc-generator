@@ -1,3 +1,4 @@
+import PropTypes from 'prop-types';
 import styled from "styled-components";
 
 export const BarraSuperior = styled.div`
@@ -5,7 +6,7 @@ export const BarraSuperior = styled.div`
     top:0;
     width:100%;
     height:50px;
-    background:${props => props.themeMode ? '#665955' : '#516970'};
+    background:${props => props.thememode ? '#665955' : '#516970'};
 
     div{
         margin-top:-38px;
@@ -19,6 +20,10 @@ export const BarraSuperior = styled.div`
       }
       
 `
+
+BarraSuperior.propTypes = {
+    thememode: PropTypes.bool.isRequired,
+};
 
 export const Titulo = styled.h2`
     font-size:36px;

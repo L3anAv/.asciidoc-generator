@@ -14,11 +14,11 @@ export const ContendorCards = styled.div`
 export const SloganPrincipal = styled.h2`
     font-family:Platypi;
     font-size:50px;
-    color:${props => props.themeMode ? '#000' : '#fff'};
+    color:${props => props.thememode ? '#000' : '#fff'};
 
     span{
         font-size:90px;
-        color:${props => props.themeMode ? '#7b716d' : '#7a939a'};
+        color:${props => props.thememode ? '#7b716d' : '#7a939a'};
     }
 
 `
@@ -53,11 +53,11 @@ export const SectorBoton = styled.div`
         border-radius:30px;
         transition:background 0.5s;
 
-        background:${props => props.themeMode ? '#665955' : '#4c4c73'};
+        background:${props => props.thememode ? '#665955' : '#4c4c73'};
 
         &:hover{
             
-            background:${props => props.themeMode ? '#91817d' : '#39395b'};
+            background:${props => props.thememode ? '#91817d' : '#39395b'};
         }
     }
 `

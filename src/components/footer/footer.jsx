@@ -6,7 +6,7 @@ const Footer = () => {
   const { theme } = useStore()
 
   return (
-    <Contenedor themeMode={theme}>
+    <Contenedor thememode={theme}>
         Hecho por <a href="https://github.com/l3anav">L3anAv</a> con ♥
     </Contenedor>
   )

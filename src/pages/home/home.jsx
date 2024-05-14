@@ -11,7 +11,7 @@ const Contenedor = styled.div`
     display:flex;
     overflow:hidden;
     height:calc(100vh - 32px);
-    background:${props => props.themeMode ? '#d6d6d6' : '#181220'};
+    background:${props => props.thememode ? '#d6d6d6' : '#181220'};
 
     img{
         display:block;
@@ -29,7 +29,7 @@ const Home = () => {
 
     return (
         <>
-        <Contenedor themeMode={theme}>
+        <Contenedor thememode={theme}>  
         <BarraTitulo />
         <SeccionPrincipalHome />
         <img src={theme ? MinEditorLight : MinEditorDark}/>

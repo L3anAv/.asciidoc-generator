@@ -1,5 +1,5 @@
 import {Link} from "wouter";
-import { useStore } from "../../store/useStoreInfo";
+import { useStore } from '../../store/useStoreInfo';
 import { BarraSuperior, Titulo } from './barraTitulo.styled'
 
 const BarraTitulo = () => {
@@ -8,7 +8,7 @@ const BarraTitulo = () => {
 
   return (
     <>
-        <BarraSuperior themeMode={theme}>
+        <BarraSuperior thememode={theme}>
           <Link href="/"><Titulo><span>.</span><span>a</span><span>d</span><span>o</span><span>c</span></Titulo></Link>
         </BarraSuperior>
     </>

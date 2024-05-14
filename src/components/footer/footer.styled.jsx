@@ -10,7 +10,7 @@ export const Contenedor = styled.div`
     font-family:Platypi;
     /*background:#665955;*/
     justify-content:center;
-    background:${props => props.themeMode ? '#665955' : '#7a939a'};
+    background:${props => props.thememode ? '#665955' : '#7a939a'};
 
     a{
         all:unset;
