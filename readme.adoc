@@ -55,6 +55,7 @@ image::https://skillicons.dev/icons?i=react,vite,styledcomponents[]
 * [x] Tema Claro/Oscuro para la app.
 
 * [ ] Guardado local.
+* [ ] Version responsive.
 * [ ] Descarga del archivo desde la web.
 * [ ] Reordenamiento de secciones sin eliminación.
 * [ ] Reinicio de contenido default para cada sección.
