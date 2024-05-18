@@ -62,10 +62,10 @@ const PreviewDocumento = () => {
   
   return (
     <Contenedor>
-    <ContenedorMenu><BotonPreview themeMode={theme} underlineActivo={mostrarPreview ? 'underline' : 'none'} onClick={() => setMostrarPreview(true)}>Previsualización</BotonPreview><BotonPreview themeMode={theme} underlineActivo={!mostrarPreview ? 'underline' : 'none'} onClick={() => setMostrarPreview(false)}>Código en asciidoc</BotonPreview></ContenedorMenu>
+    <ContenedorMenu><BotonPreview thememode={theme} underlineactivo={mostrarPreview ? 'underline' : 'none'} onClick={() => setMostrarPreview(true)}>Previsualización</BotonPreview><BotonPreview thememode={theme} underlineactivo={!mostrarPreview ? 'underline' : 'none'} onClick={() => setMostrarPreview(false)}>Código en asciidoc</BotonPreview></ContenedorMenu>
     {mostrarPreview ?
-      <><ButtonCopiar themeMode={theme} onClick={() => hadleBotonThemeMode()}>{themeName}</ButtonCopiar><ZonaPreview dangerouslySetInnerHTML={{__html: asciidoctor.convert(textoParaPreview)}}/></>
-      : <><ButtonCopiar themeMode={theme} onClick={() => handleClickBotonCopiar()}>Copiar Contenido</ButtonCopiar><ZonaPreviewAscii disabled>{textoParaPreview}</ZonaPreviewAscii></>
+      <><ButtonCopiar thememode={theme} onClick={() => hadleBotonThemeMode()}>{themeName}</ButtonCopiar><ZonaPreview dangerouslySetInnerHTML={{__html: asciidoctor.convert(textoParaPreview)}}/></>
+      : <><ButtonCopiar thememode={theme} onClick={() => handleClickBotonCopiar()}>Copiar Contenido</ButtonCopiar><ZonaPreviewAscii disabled>{textoParaPreview}</ZonaPreviewAscii></>
     }
     <ToastContainer />
     </Contenedor>

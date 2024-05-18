@@ -27,15 +27,27 @@ const Home = () => {
 
     const { theme } = useStore()
 
-    return (
-        <>
-        <Contenedor thememode={theme}>  
-        <BarraTitulo />
-        <SeccionPrincipalHome />
-        <img src={theme ? MinEditorLight : MinEditorDark}/>
-        </Contenedor>
-        <Footer />
-        </>
-    )
+    /*
+    const isMobile = useIsMobile()*/
+    /*
+    if(!isMobile){
+      */
+        return (
+            <>
+            <Contenedor thememode={theme}>  
+            <BarraTitulo />
+            <SeccionPrincipalHome />
+            <img src={theme ? MinEditorLight : MinEditorDark}/>
+            </Contenedor>
+            <Footer />
+            </>
+        )
+    /*
+      }else{
+        return (
+        <div>No disponemos de versión fuera de escritorio todavía 😢.</div>
+        )
+    }
+    */
 }
 export default Home

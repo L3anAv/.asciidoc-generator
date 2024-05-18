@@ -2,7 +2,7 @@ import Boton from '../boton/boton';
 import { v4 as uuidv4 } from 'uuid';
 import Trash from '../../svg/trash/trash'
 import { useState,useEffect } from 'react';
-import { darTitulosPorId } from '../../utils/darInfoPorId'
+import { DarTitulosPorId } from '../../utils/darInfoPorId'
 import ContenedorBoton from '../botonContenedor/botonContenedor'
 import { useStore, agregarId, removerId, agregarContenidos } from '../../store/useStoreInfo';
 import { ArrayBotonesFijos } from '../../utils/auxiliares-json/SeccionesFijas';
@@ -28,7 +28,7 @@ const BarraSeccionesDocumento = () => {
 
     for (const id of ids) {
 
-      const tituloBotonParaId = darTitulosPorId(id)
+      const tituloBotonParaId = DarTitulosPorId(id)
       titulosMap.set(id, tituloBotonParaId)
 
     }
@@ -71,6 +71,7 @@ const BarraSeccionesDocumento = () => {
 
       <SeccionesParaSeleccionar>
         <Boton
+          border={false}
           botonwidth={90}
           botonId={`BotonSeccionNueva`}
           contenidoBoton={`+ Nueva Sección`}

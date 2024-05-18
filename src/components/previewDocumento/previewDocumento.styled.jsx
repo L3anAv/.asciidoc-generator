@@ -12,13 +12,13 @@ export const ContenedorMenu = styled.div`
 
 export const BotonPreview = styled.button`
     color:#fff;
-    color:${props => props.themeMode ? '#18111d' : '#fff'};
+    color:${props => props.thememode ? '#18111d' : '#fff'};
     border:none;
     font-size:12px;
     background:none;
     margin-left:10px;
     font-family:OpenSans;
-    text-decoration:${props => props.underlineActivo};
+    text-decoration:${props => props.underlineactivo};
 
     &:hover{
         cursor:pointer;
@@ -67,10 +67,10 @@ export const ButtonCopiar = styled.button`
     border-radius:15px;
     font-family:OpenSans;
 
-    background:${props => props.themeMode ? '#665955' : '#4c4c73'};
+    background:${props => props.thememode ? '#665955' : '#4c4c73'};
 
     &:hover{
         cursor:pointer;
-        background:${props => props.themeMode ? '#91817d' : '#39395b'};
+        background:${props => props.thememode ? '#91817d' : '#39395b'};
     }
 `

@@ -1,7 +1,7 @@
 import { useState, useEffect } from 'react'
 import { AreaDeTexto, Contenedor }  from './textarea.styled'
 import { useStore, agregarContenidos }  from '../../store/useStoreInfo'
-import { darInfoPorId, darTitulosPorId } from '../../utils/darInfoPorId'
+import { darInfoPorId, DarTitulosPorId } from '../../utils/darInfoPorId'
 
 const Textarea = () => {
   
@@ -22,7 +22,7 @@ const Textarea = () => {
     }
 
     if(idActual != ''){
-      const TituloActual = darTitulosPorId(idActual)
+      const TituloActual = DarTitulosPorId(idActual)
       setTittuloTextArea(TituloActual)
     }else{
       setTittuloTextArea('Editor')
