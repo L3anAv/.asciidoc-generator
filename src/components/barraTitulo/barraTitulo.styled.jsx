@@ -2,14 +2,11 @@ import PropTypes from 'prop-types';
 import styled from "styled-components";
 
 export const BarraSuperior = styled.div`
-    position:absolute;
-    top:0;
     width:100%;
     height:50px;
     background:${props => props.thememode ? '#665955' : '#516970'};
 
     div{
-        margin-top:-38px;
         margin-left:11%;
     }
 
@@ -29,9 +26,9 @@ export const Titulo = styled.h2`
     font-size:36px;
     margin-left:2%;
     font-family:Righteous-Regular;
-    
+
     span {
-        display: inline-block;
+        display:inline-block;
 
         &:hover{
             transform:translateY(-5px);

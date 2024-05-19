@@ -3,7 +3,7 @@ import styled from "styled-components";
 export const Contenedor = styled.div`
     width:45%;
     margin-left:6%;
-    margin-top:60px;
+    margin-top:20px;
 `
 
 export const ContendorCards = styled.div`

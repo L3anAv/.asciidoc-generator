@@ -6,9 +6,8 @@ export const Contenedor = styled.div`
     color:#fff;
     padding:8px;
     z-index:1;
-    font-size:16px;
+    font-size:12px;
     font-family:Platypi;
-    /*background:#665955;*/
     justify-content:center;
     background:${props => props.thememode ? '#665955' : '#7a939a'};
 

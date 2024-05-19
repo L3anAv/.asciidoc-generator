@@ -10,13 +10,12 @@ const Contenedor = styled.div`
     width:100%;
     display:flex;
     overflow:hidden;
-    height:calc(100vh - 32px);
+    height:calc(95vh - 45px);
     background:${props => props.thememode ? '#d6d6d6' : '#181220'};
 
     img{
         display:block;
-        max-width:50%;
-        margin-top:50px;
+        max-width:60%;
         object-fit: scale-down;
         transform:translateX(18%);
         z-index:2;
@@ -27,27 +26,15 @@ const Home = () => {
 
     const { theme } = useStore()
 
-    /*
-    const isMobile = useIsMobile()*/
-    /*
-    if(!isMobile){
-      */
         return (
             <>
-            <Contenedor thememode={theme}>  
             <BarraTitulo />
+            <Contenedor thememode={theme}>
             <SeccionPrincipalHome />
             <img src={theme ? MinEditorLight : MinEditorDark}/>
             </Contenedor>
             <Footer />
             </>
         )
-    /*
-      }else{
-        return (
-        <div>No disponemos de versión fuera de escritorio todavía 😢.</div>
-        )
-    }
-    */
 }
 export default Home
