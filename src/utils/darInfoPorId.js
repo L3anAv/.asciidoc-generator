@@ -1,4 +1,3 @@
-import  useMemo  from "react";
 import {ArrayBotonesFijos} from "./auxiliares-json/SeccionesFijas"
 import {ArrayBotonesSecciones} from "./auxiliares-json/SeccionesInfo"
 
@@ -24,6 +23,6 @@ export function DarTitulosPorId(id) {
       return 'Seccion Personalizada';
     };
   
-    const title = useMemo(() => findTitle([ArrayBotonesSecciones, ArrayBotonesFijos]), [id]);
+    const title = findTitle([ArrayBotonesSecciones, ArrayBotonesFijos]);
     return title;
   }
